@@ -15,10 +15,10 @@ function Header() {
                     </div>
                     
                 </div>
-                <div className="mr-3 ml-3">
-                    <Resume label={""} value={""}/>
-                    
+                <div className="bg-resume-green mr-3 ml-3">
+                    <Resume label={"1"} value={"Novos"}/>
                 </div>
+                
                 
 
             </header>

@@ -4,22 +4,23 @@ interface ResumeProps {
   label: string;
   value: string | number;
   icon?: string;
-  bgColor?: string;
-  
+  bgColorIcon?: string;
+
 }
 
-function Resume({ label, value, icon = "?", bgColor = "bg-gray-200" }: ResumeProps) {
+function Resume({ label, value, icon = "?" ,bgColorIcon = "bg-gray-200" }: ResumeProps) {
   return (
-    <Card className="w-full border-none shadow-sm">
+    
+    <Card className= "w-full border-none shadow-sm">
       <CardContent className="flex justify-between items-center p-4">
         <div>
-          <span className={`${bgColor} rounded-full w-8 h-8 flex items-center justify-center font-bold`}>
+          <span className={`${bgColorIcon} rounded-full w-8 h-8 flex items-center justify-center font-bold`}>
             {icon}
           </span>
         </div>
-        <div className="text-right">
-          <div className="text-xs text-muted-foreground">{label}</div>
-          <div className="text-lg font-bold">{value}</div>
+        <div className="text-right flex flex-col border ">
+          <span className="text-xs text-muted-foreground">{label}</span>
+          <span className="text-lg font-bold">{value}</span>
         </div>
       </CardContent>
     </Card>
