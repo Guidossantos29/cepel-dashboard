@@ -1,4 +1,6 @@
-import { useState } from 'react'
+
+import Header from './components/layout/Header'
+import Dashboard from './pages/Dashboard'
 
 
 function App() {
@@ -6,7 +8,9 @@ function App() {
 
   return (
     <>
-      
+    <Header/>
+    <Dashboard/>
+  
     </>
   )
 }
