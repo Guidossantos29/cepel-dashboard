@@ -1,5 +1,5 @@
 import Logo from "../../assets/logo-cepel.png"
-import { Card, CardContent, CardDescription, CardTitle } from "../ui/card"
+import Resume from "./resume"
 
 
 function Header() {
@@ -13,20 +13,13 @@ function Header() {
                     <div className="flex border-b pb-2 mb-3 justify-center w-[150px] md:border-none ">
                         <img src={Logo} alt="logo-cepel" />
                     </div>
-
-                    <Card className="w-full mr-3 ml-3 border-none shadow-sm">
-                        <CardContent className="flex justify-between">
-                            <div className="">
-                                <span className="bg-amber-200 rounded-full w-8 h-8 flex items-center justify-center">H</span>
-                            </div>
-                            <div className="">
-                                <span className="font-bold" >1</span>
-                                <span></span>
-                            </div>
-                        </CardContent>
-                    </Card>
+                    
                 </div>
-
+                <div className="mr-3 ml-3">
+                    <Resume label={""} value={""}/>
+                    
+                </div>
+                
 
             </header>
 
