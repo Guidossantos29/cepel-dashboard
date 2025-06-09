@@ -4,13 +4,13 @@ import Dashboard from './pages/Dashboard'
 
 
 function App() {
- 
+
 
   return (
-    <>
-    <Header/>
-    <Dashboard/>
-    </>
+    <div className='bg-background'>
+      <Header />
+      <Dashboard />
+    </div>
   )
 }
 

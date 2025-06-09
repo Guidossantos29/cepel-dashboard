@@ -1,6 +1,6 @@
 import Logo from "../../assets/logo-cepel.png"
 import Resume from "./Resume"
-import { Calendar, MailPlus, UserRoundX, Pause, CircleAlert } from "lucide-react"
+import { Calendar, MailPlus, UserRoundX, Pause,ClockAlert } from "lucide-react"
 import dadosGerais from "../../data/dadosGeral.json"
 
 function Header() {
@@ -39,15 +39,15 @@ function Header() {
               separator
               bgColor="bg-resume-red"
               bgColorIcon="bg-resume-red-dark"
-              icon={<Pause />}
+              icon={<ClockAlert/>}
             />
             <Resume
               label="Pendentes"
               value={dadosGerais.pendenteTotal}
-              separator={true}
+              separator
               bgColor="bg-resume-yellow"
               bgColorIcon="bg-resume-yellow-dark"
-              icon={<CircleAlert />}
+              icon={<Pause />}
             />
             <Resume
               label="SLA Geral (Mês)"
